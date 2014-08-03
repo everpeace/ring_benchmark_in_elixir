@@ -5,7 +5,7 @@ defmodule RingBenchmarkInElixir.Mixfile do
     [app: :ring_benchmark,
      escript: escript,
      version: "0.0.1",
-     elixir: "~> 0.14.2",
+     elixir: "~> 0.14.3",
      deps: deps]
   end
 
@@ -30,6 +30,6 @@ defmodule RingBenchmarkInElixir.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    []
+    [{:benchmark, github: "everpeace/elixir-benchmark", branch: "feature/report_results"}]
   end
 end
